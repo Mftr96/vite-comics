@@ -23,9 +23,6 @@ export default {
     console.log("App montata Header");
   }
 }
-
-
-
 </script>
 
 <template>
