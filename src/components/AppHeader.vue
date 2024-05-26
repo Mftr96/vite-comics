@@ -27,7 +27,7 @@ export default {
 
 <template>
     <header>
-        <img src="../../vue-dc-comics-1/vue-dc-comics-1/img/dc-logo.png" alt="dc-logo.png">
+        <img src="../../src/assets/img/dc-logo.png" alt="dc-logo.png">
         <div class="header-right">
             <a v-for="link in headerList" href="#">{{link}}</a>
         </div>

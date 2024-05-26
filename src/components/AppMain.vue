@@ -1,26 +1,23 @@
-<script >
-
-
+<script>
 export default {
   data() {
     return {
         photos:[
-            {path:"../../assets/img/buy-comics-digital-comics.png",
+            {percorso:"../../src/assets/img/buy-comics-digital-comics.png",
                 txt:"DIGITAL COMICS"
             },
-            {path:"../../assets/img/buy-comics-merchandise.png",
+            {percorso:"../../src/assets/img/buy-comics-merchandise.png",
                 txt:"MERCHANDISE"
             },
-            {path:"../../assets/img/buy-comics-subscription.png",
+            {percorso:"../../src/assets/img/buy-comics-subscription.png",
                 txt:"SUBSCRIPTION"
             },
-            {path:"../../assets/img/buy-comics-shop-locator.png",
+            {percorso:"../../src/assets/img/buy-comics-shop-locator.png",
                 txt:"COMIC SHOP LOCATOR"
             },
-            {path:"../../assets/img/buy-dc-power-visa.svg",   
+            {percorso:"../../src/assets/img/buy-dc-power-visa.svg",   
                 txt:"DC POWER VISA"
             }
-
         ],
          fumetti: [
     {
@@ -118,18 +115,15 @@ export default {
                 </div>
             </div>
         </section>
+
         <section class="main-lower">
             <div class="container-lower">
                 <div v-for="image in photos" class="card-lower">
-                    <img :src="image.path" :alt="image"> 
+                    <img :src="image.percorso" alt=""> 
                     <p>{{image.txt}}</p>
-                </div>
-            
-               
+                </div>    
             </div>
-
         </section>
-
     </main>
 
 </template>
@@ -141,7 +135,6 @@ export default {
         flex-wrap: wrap;
         gap: 1rem;
         margin: 0 auto;
-        border: 1px dashed crimson;
     }
 
     .main-upper{
@@ -152,7 +145,6 @@ export default {
     .card-upper{
         width:200px;
         height:200px;
-        border: 0.5px solid yellowgreen;
         margin-bottom: 2rem;
     }
     .main-upper>.container-upper img{
@@ -162,28 +154,27 @@ export default {
     .main-upper>.container-upper p{
         width:100%;
     }
-    /* -------------------------------------- */
+    /* --------MAIN-LOWER STYLE------------------------------ */
     .container-lower{
-        width: 1200px;
+        width: 1300px;
         display: flex;
         margin: 0 auto;
         gap: 2rem;
-        border: 1px dashed crimson;
     }
-.main-lower{
-    background-color: rgb(2, 130, 249);
-    color: white;
-}
-.card-lower{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
+    .main-lower{
+        background-color: rgb(2, 130, 249);
+        color: white;
+    }
+    .card-lower{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
 
-.card-lower img{
-    width: 50%;
-}
-.card-lower *{
-    margin-right: 0.6rem;
-}
+    .card-lower img{
+        width: 50%;
+    }
+    .card-lower *{
+        margin-right: 0.6rem;
+    }
 </style>
