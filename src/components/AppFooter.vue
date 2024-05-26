@@ -77,7 +77,9 @@ footer{
   height: 500px;
   background-image: url(../../src/assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   color: rgb(137, 126, 124);
 }
@@ -88,14 +90,12 @@ p{
   margin-bottom: 0.3rem;
 }
 img{
-  width: 80%;
+  width: 100%;
 }
 .footer-left{
-  border: 1px solid crimson;
   display: flex;
   gap: 0.5rem;
 }
 .footer-right{
-  border: 1px solid yellowgreen;
 }
 </style>
